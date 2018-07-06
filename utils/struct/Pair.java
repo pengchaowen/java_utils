@@ -1,4 +1,4 @@
-package Utils.Struct;
+package utils.struct;
 
 import java.io.Serializable;
 
@@ -89,8 +89,8 @@ public class Pair<K,V> implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o instanceof Utils.Struct.Pair) {
-            Utils.Struct.Pair pair = (Utils.Struct.Pair) o;
+        if (o instanceof utils.struct.Pair) {
+            utils.struct.Pair pair = (utils.struct.Pair) o;
             if (key != null ? !key.equals(pair.key) : pair.key != null) return false;
             if (value != null ? !value.equals(pair.value) : pair.value != null) return false;
             return true;
